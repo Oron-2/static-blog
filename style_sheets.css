@@ -1,0 +1,87 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #00ff66;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  min-height: 100vh;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 20em)) 1fr;
+  grid-template-rows: auto 1fr auto;
+  font-family: Courier, monospace;
+  background-color: #00100a;
+}
+
+.page-header {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border-block-end: 2px dotted #00ff66;
+}
+
+.page-body {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.page-footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  border-block-start: 2px dotted #00ff66;
+}
+
+/*Title typing animation*/
+.page-title {
+  animation: type 3s steps(13, start);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #00ff66; /*The cursor's attributes*/
+  width: 13ch; /*The total amount of characters in the title*/
+  text-align: inherit;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 13ch;
+  }
+}
+/*End of Title typing animation*/
+
+/*Links styling*/
+/*This order is important because link styles build on one another.*/
+a {
+  outline: none;
+  text-decoration: none; /*Gets rid of the default text underline.*/
+}
+
+a:link {
+  color: #00ff66; /*Default colour for the links.*/
+}
+
+a:visited {
+  color: #00ff66;
+}
+
+a:focus {
+}
+
+a:hover {
+  color: #00100a;
+  background: #00ff66;
+}
+
+a:active {
+  /* Gives the links an inverted color scheme while they are being activated*/
+  color: #00ff66;
+  background: #00100a;
+}
+/*End of the links styling*/
