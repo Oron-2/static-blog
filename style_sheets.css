@@ -11,7 +11,7 @@ body {
   grid-template-rows: auto 1fr auto;
   font-family: Courier, monospace;
   background-color: #00100a;
-  list-style: 1,4;
+  line-height: 1.4;
 }
 
 .page-header {
