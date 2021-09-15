@@ -11,7 +11,6 @@ body {
   grid-template-rows: auto 1fr auto;
   font-family: Courier, monospace;
   background-color: #00100a;
-  line-height: 1.4;
 }
 
 .page-header {
@@ -27,6 +26,7 @@ body {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  line-height: 1.4;
 }
 
 .page-footer {
