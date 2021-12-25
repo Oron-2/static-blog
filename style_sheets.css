@@ -5,8 +5,8 @@ body {
 }
 
 img {
-  width: 65rem;
-  height: 65rem;
+  max-width: 100%;
+  height: auto;
   border-radius: 1rem;
 }
 
