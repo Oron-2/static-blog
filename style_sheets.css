@@ -4,6 +4,12 @@ body {
   color: #00ff66;
 }
 
+img {
+  width: 65rem;
+  height: 65rem;
+  border-radius: 1rem;
+}
+
 .wrapper {
   display: grid;
   grid-gap: 10px;
