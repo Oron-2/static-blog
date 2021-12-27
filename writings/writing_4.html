@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>How deep the rabbit hole goes?</title>
+    <link rel="stylesheet" type="text/css" href="../style_sheets.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Header-->
+        <div class="page-header">
+            <h1 class="page-title"><a href="../index.html">Wake up, V...</a></h1>
+        </div>
+        <!--Header Ends-->
+
+        <!-- Body -->
+        <div class="page-body">
+            <article>
+                <h2>Accessing directories or files with spaces in the name</h2>
+                <p class="date">27/12/21</p>
+
+                <p>I ran into a small problem after I started using the terminal a bit. I tried to change the directory
+                    to another, which, however, contained spaces in its name with no success. So, I had to find a way to
+                    navigate to that folder because I knew it was not the only one on my computer having spaces. I
+                    searched for a solution on the internet, reached to a friend and ended up with three ways to do
+                    that:</p>
+
+                <ul>
+                    <li>Using TAB</li>
+                    <p>Using the TAB autocompletes the folder's full name by adding a backslash, also called an escape
+                        character for each whitespace between words which makes zsh read the space as part of the file
+                        name.</p>
+                    <p>If I have a folder with the name &quot;My folder&quot;, the command to navigate to it will look
+                        like this:</p>
+                    <p>cd My\ folder</p>
+                    <li>Using double quotes</li>
+                    <p>Writing down the path's name being either relative or absolute in double quotes works too. There
+                        is no need to add an escape character for the spaces when using double quotes:</p>
+                    <p>&quot;cd My folder&quot;</p>
+                </ul>
+                <p>It's a little thing, but it was an obstacle for me to continue what I was trying to do.</p>
+            </article>
+        </div>
+        <!--Body Ends-->
+
+        <!--Footer-->
+        <div class="page-footer">
+            <p>
+                Email: PetarPandzharov@protonmail.ch,
+                <a href="https://uk.linkedin.com/in/petar-pandzharov-1428311a9">LinkedIn: Petar Pandzharov</a>
+            </p>
+        </div>
+        <!--Footer Ends-->
+    </div>
+    <!--Wrapper Ends-->
+</body>
+
+</html>
