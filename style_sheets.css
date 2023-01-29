@@ -17,7 +17,7 @@ img {
   grid-template-columns: 1fr repeat(2, minmax(auto, 20em)) 1fr;
   grid-template-rows: auto 1fr auto;
   font-family: Courier, monospace;
-  background-color: #00100a;
+  background-color: #000000;
 }
 
 .page-header {
