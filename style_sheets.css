@@ -46,38 +46,52 @@ img {
 
 /*Title typing animation*/
 .page-title {
-  animation: type 3s steps(13, start);
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 4px solid #00ff66; /*The cursor's attributes*/
-  width: 13ch; /*The total amount of characters in the title*/
-  text-align: inherit;
+    position: relative;
+    /* Ensure proper positioning for pseudo-element */
+    animation: type 3s steps(13, start) forwards;
+    /* Use forwards to keep final state */
+    overflow: hidden;
+    white-space: nowrap;
+    width: 13ch;
+    /*The total amount of characters in the title*/
+    text-align: inherit;
 }
 
 @keyframes type {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 13ch;
-  }
-}
-/*End of Title typing animation*/
+    0% {
+        width: 0ch;
+    }
 
+    100% {
+        width: 13ch;
+    }
+}
+
+/* Blinking cursor */
 .page-title::after {
-  animation: blink 3s steps(13, start);
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 4px solid #00ff66; /*The cursor's attributes*/
-  width: 13ch;
-  text-align: inherit;
+    content: "";
+    /* Necessary for pseudo-elements */
+    position: absolute;
+    /* Position the cursor relative to .page-title */
+    top: 0;
+    right: 0;
+    width: 4px;
+    /* Cursor width */
+    height: 100%;
+    /* Cursor height */
+    background-color: #00ff66;
+    /* Cursor color */
+    animation: blink 1s infinite;
+    /* Blinking animation */
 }
 
 @keyframes blink {
-  to {
-    background-color: #00100a;
-  }
+    50% {
+        opacity: 0;
+        /* Cursor disappears for 50% of the animation */
+    }
 }
+/*End of Title typing animation*/
 
 /*Links styling*/
 /*This order is important because link styles build on one another.*/
